@@ -17,6 +17,7 @@ pipeline {
         CI = 'true'
       }
       steps {
+          sh 'pwd && ls -alt'
           sh './jenkins/scripts/test.sh'
       }
     }
