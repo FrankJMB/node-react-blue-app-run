@@ -1,7 +1,7 @@
 pipeline {
   agent {
     docker {
-      image 'node:6-alpine'
+      image 'frankjmb/node-react-blue-app:latest'
       args '-p 3000:3000'
     }
 
@@ -9,7 +9,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'npm install'
+      input 'npm install (Click "Proceed" to continue)'
       }
     }
     stage('Test') {
