@@ -17,9 +17,7 @@ pipeline {
         CI = 'true'
       }
       steps {
-        dir("/app") {
-          sh './jenkins/scripts/test.sh'
-        }
+          sh 'cd /app && ./jenkins/scripts/test.sh'
       }
     }
     stage('Deliver') {
