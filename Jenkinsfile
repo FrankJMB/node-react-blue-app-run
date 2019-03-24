@@ -1,7 +1,7 @@
 pipeline {
   agent {
     docker {
-      image 'frankjmb/node-react-blue-app:latest'
+      image 'node-react-blue-app:latest'
       args '-p 3000:3000'
     }
 
