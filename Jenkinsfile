@@ -17,8 +17,8 @@ pipeline {
         CI = 'true'
       }
       steps {
-          // sh './jenkins/scripts/test.sh'
-          sh 'cd /appl && ls -alt'
+          sh './jenkins/scripts/test.sh'
+          // sh 'cd /appl && ls -alt'
           input 'test.sh "Proceed" to continue)'
       }
     }
